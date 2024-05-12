@@ -1,10 +1,11 @@
-import {NavBar} from "./components/NavBar"
-import styles from "./components/NavBar.module.css";
+import {NavBar} from "./components/NavBar";
 import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import { ArtListPage } from "./pages/ArtListPage";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,33 +18,28 @@ const router = createBrowserRouter([
     ),
     element: (
       <div>
-        <NavBar />
+        <NavBar></NavBar>
         <Outlet />
       </div>
     ),
     children: [
       {
         path: "/",
-        element: <h1></h1>,
+        element: <ArtListPage></ArtListPage>,
       },
       {
         path: "/contact",
         element: <div>Contact</div>,
       },
       {
-        path: "/welcome/:nomDuDresseur",
-        element: <h1></h1>,
+        path: "/search",
+        element: <div>
+          <h2>Recherche</h2>
+        </div>,
       },
       {
         path: "/view/:name",
-        element: <h1></h1>,
-      },
-      {
-        path: "/pokemons/new",
-        element: (
-          <div className={styles.PokeForm}>
-          </div>
-        ),
+        element: <h1>Page d'une Oeuvre</h1>,
       },
     ],
   },

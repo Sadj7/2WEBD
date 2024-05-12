@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from "./ArtCard.module.css";
 
 interface ArtCardProps {
-    name: string;
+    title: string;
     imageUrl: string;
     artist: string;
 }
@@ -24,8 +24,8 @@ export function ArtCard(props: ArtCardProps) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           >
-          <img src={props.imageUrl} alt={props.name} />
-            <h2>{props.name}</h2>
+          <img src={props.imageUrl} alt={props.title} />
+            <h2>Titre : {props.title}</h2>
           <h4>Artiste: {props.artist}</h4>
           {/* <Link to={`/view/${props.name}`}>
             <button>Voir Détails</button>
