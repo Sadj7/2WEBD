@@ -1,5 +1,6 @@
 import React from "react";
 import { ArtDetail } from "./details";
+import "./ArtDetailCard.module.css";
 
 interface ArtDetailCardProps {
   detail: ArtDetail;

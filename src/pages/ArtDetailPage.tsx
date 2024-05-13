@@ -8,17 +8,13 @@ const ArtDetailPage = () => {
     parseInt(objectID || "0")
   );
 
-  if (!objectID) {
-    return <div>Error: Object ID is not provided</div>;
-  }
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
-  if (isError) {
-    return <div>Error: {error.message}</div>;
-  }
+  //   if (isError) {
+  //     return <div>Error: {error.message}</div>;
+  //   }
 
   return (
     <div>
