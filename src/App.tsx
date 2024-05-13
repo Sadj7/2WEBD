@@ -1,10 +1,7 @@
-import {NavBar} from "./components/NavBar";
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { NavBar } from "./components/NavBar";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { ArtListPage } from "./pages/ArtListPage";
+import ArtDetailPage from "./pages/ArtDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -33,13 +30,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/search",
-        element: <div>
-          <h2>Recherche</h2>
-        </div>,
+        element: (
+          <div>
+            <h2>Recherche</h2>
+          </div>
+        ),
       },
       {
         path: "/view/:name",
-        element: <h1>Page d'une Oeuvre</h1>,
+        element: (
+          <div>
+            <h1>Page d'une Oeuvre</h1>
+            <div>
+              <ArtDetailPage></ArtDetailPage>
+            </div>
+          </div>
+        ),
       },
     ],
   },
@@ -49,4 +55,4 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
