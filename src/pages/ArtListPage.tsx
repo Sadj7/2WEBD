@@ -6,9 +6,7 @@ import { useState } from "react";
 
 export function ArtListPage() {
   const [offset, setOffset] = useState(0);
-  const [id, setId] = useState(0);
   const artIdListQuery = useArtIdListQuery();
-  const artIdDetailQuery = useArtDetailQuery(id);
 
   const incrementOffset = () => {
     setOffset(offset + 10);
@@ -18,7 +16,7 @@ export function ArtListPage() {
     if (offset === 0) return;
     setOffset(offset - 10);
   };
-
+  
   if (artIdListQuery.isLoading) {
     return <div><h2>Chargement en cours...</h2></div>;
   }
@@ -35,22 +33,9 @@ export function ArtListPage() {
     <div>
       <h2>Oeuvres mises en valeur: </h2>
       <div>
-      {displayedArts?.map((artId) => {
-        setId(artId);
-        const art = artIdDetailQuery.data;
-        console.log('artIdDetailQuery.data:', art);
-        return art?.results.map((detail) => (
-        <div>
-          <h2>art</h2>
-          <ArtCard
-          key={artId}
-          title={detail.title}
-          imageUrl={detail.primaryImage}
-          artist={detail.artistDisplayName}
-        />
-        </div>
-        ));
-      })}
+        {displayedArts?.map((artId: number) => (
+          <ArtCardWithDetails key={artId} id={artId} />
+        ))}
       </div>
       <div className={styles.Pagination}>
         <button disabled={offset === 0} onClick={decrementOffset}>
@@ -65,5 +50,23 @@ export function ArtListPage() {
         </button>
       </div>
     </div>
+  );
+}
+
+interface ArtCardWithDetailsProps {
+  id: number;
+}
+
+function ArtCardWithDetails({ id }: ArtCardWithDetailsProps) {
+  const artDetailQuery = useArtDetailQuery(id);
+  const artDetail = artDetailQuery.data?.results[0];
+
+  return (
+    <ArtCard
+      key={id}
+      title={artDetail?.title ?? "Titre inconnu"}
+      imageUrl={artDetail?.primaryImage ?? ""}
+      artist={artDetail?.artistDisplayName ?? "Artiste inconnu"}
+    />
   );
 }
