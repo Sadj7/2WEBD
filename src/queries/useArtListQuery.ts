@@ -1,17 +1,16 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { ArtDetail } from "../components/details";
 
 interface ArtListResponse {
     total: number;
-    results: ArtDetail[];
+    idsList: number[];
 }
 
-export function useArtListQuery(limit: number, offset: number) {
+export function useArtIdListQuery() {
     return useQuery({
-        queryKey: ["arts", { limit, offset }],
+        queryKey: ["arts"],
         queryFn: async () => {
             const response = await fetch(
-                `https://collectionapi.metmuseum.org/public/collection/v1/objects?limit=${limit}&offset=${offset}`
+                `https://collectionapi.metmuseum.org/public/collection/v1/objects`
             );
             const json = await response.json();
             return json as ArtListResponse;

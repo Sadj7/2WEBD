@@ -28,7 +28,7 @@ export function ArtCard(props: ArtCardProps) {
       <img src={props.imageUrl} alt={props.title} />
       <h2>Titre : {props.title}</h2>
       <h4>Artiste: {props.artist}</h4>
-      <Link to={`/view/${props.name}`}>
+      <Link to={`/view/${props.title}`}>
         <button>Voir Détails</button>
       </Link>
     </div>

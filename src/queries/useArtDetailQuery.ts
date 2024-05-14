@@ -1,4 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
+import { ArtDetail } from "../components/details";
+
+interface ArtDetailResponse {
+  results: ArtDetail[];
+}
 
 export function useArtDetailQuery(objectID: number) {
   return useQuery({
@@ -7,10 +12,8 @@ export function useArtDetailQuery(objectID: number) {
       const response = await fetch(
         `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`
       );
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`);
-      }
-      return response.json();
+      const json = await response.json();
+      return json as ArtDetailResponse;
     },
   });
 }
