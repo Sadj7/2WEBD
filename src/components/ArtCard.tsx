@@ -3,7 +3,6 @@ import styles from "./ArtCard.module.css";
 import { Link } from "react-router-dom";
 
 interface ArtCardProps {
-  name: string;
   title: string;
   imageUrl: string;
   artist: string;

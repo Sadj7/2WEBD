@@ -5,23 +5,24 @@ import { useState } from "react";
 
 export function ArtListPage() {
   const [offset, setOffset] = useState(0);
-  // const limit = 10;
-  const artListQuery = useArtListQuery(" ");
+  const limit = 10;
+  const artListQuery = useArtListQuery(limit, offset);
 
   const incrementOffset = () => {
     setOffset(offset + 10);
   };
 
   const decrementOffset = () => {
+    if (offset === 0) return;
     setOffset(offset - 10);
   };
 
   if (artListQuery.isLoading) {
-    return <div>Chargement en cours...</div>;
+    return <div><h2>Chargement en cours...</h2></div>;
   }
 
   if (artListQuery.isError) {
-    return <div>Erreur lors du chargement</div>;
+    return <div><h2>Erreur lors du chargement</h2></div>;
   }
 
   const arts = artListQuery.data;
@@ -38,7 +39,6 @@ export function ArtListPage() {
               title={art.title}
               imageUrl={art.primaryImage}
               artist={art.artistDisplayName}
-              name={""}
             ></ArtCard>
           );
         })}

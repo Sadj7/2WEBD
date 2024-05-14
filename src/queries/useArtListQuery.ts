@@ -6,12 +6,12 @@ interface ArtListResponse {
     results: ArtDetail[];
 }
 
-export function useArtListQuery(request: string) {
+export function useArtListQuery(limit: number, offset: number) {
     return useQuery({
-        queryKey: ["arts"],
+        queryKey: ["arts", { limit, offset }],
         queryFn: async () => {
             const response = await fetch(
-                `https://collectionapi.metmuseum.org/public/collection/v1/search?isHighlight=true&q=${request}`
+                `https://collectionapi.metmuseum.org/public/collection/v1/objects?limit=${limit}&offset=${offset}`
             );
             const json = await response.json();
             return json as ArtListResponse;
