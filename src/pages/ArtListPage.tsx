@@ -31,7 +31,7 @@ export function ArtListPage() {
 
   return (
     <div>
-      <h2>Oeuvres mises en valeur: </h2>
+      <h2>Oeuvres mises en valeur: {artsIdList?.total}</h2>
       <div>
         {displayedArts?.map((artId: number) => (
           <ArtCardWithDetails key={artId} id={artId} />
