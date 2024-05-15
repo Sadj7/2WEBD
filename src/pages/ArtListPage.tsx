@@ -6,8 +6,7 @@ import { useState } from "react";
 
 export function ArtListPage() {
   const [offset, setOffset] = useState(0);
-  const limit = 10;
-  const artIdListQuery = useArtIdListQuery(limit, offset);
+  const artIdListQuery = useArtIdListQuery();
 
   const incrementOffset = () => {
     setOffset(offset + 10);
@@ -35,7 +34,7 @@ export function ArtListPage() {
       <h2>Oeuvres mises en valeur: {total}</h2>
       <div className={styles.ArtGrid}>
         {artsIdList?.map((id: number) => (
-          <ArtCardWithDetails key={id} id={id} />
+          <ArtCardWithDetails key={id} id={id}  />
         ))}
       </div>
       <div className={styles.Pagination}>
@@ -70,7 +69,7 @@ function ArtCardWithDetails({ id }: { id: number }) {
   if(!artDetail) {
     return <div><h4>No art found !</h4></div>
   }
-
+  
   return (
     <ArtCard title={artDetail.title} artist={artDetail.artistDisplayName} imgUrl={artDetail.primaryImageSmall} id={artDetail.objectID}/>
   )

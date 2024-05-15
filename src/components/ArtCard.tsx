@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./ArtCard.module.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,6 @@ interface ArtCardProps {
 }
 
 export function ArtCard(props: ArtCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
   const imageUrl = props.imgUrl
     ? props.imgUrl 
     : "https://salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png";
@@ -18,19 +16,9 @@ export function ArtCard(props: ArtCardProps) {
   const artTitle = props.title ? props.title : "Titre inconnu";
 
   const artistName = props.artist ? props.artist : "Artiste inconnu";
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
   return (
     <div
-      className={`${styles.ArtCard} ${isHovered ? styles.hovered : ""}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className={styles.ArtCard}
     >
       <img className={styles.fill} src={imageUrl} alt={artTitle} />
       <h4>Titre : {artTitle}</h4>

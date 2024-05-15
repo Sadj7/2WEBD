@@ -1,7 +1,7 @@
 import { NavBar } from "./components/NavBar";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { ArtListPage } from "./pages/ArtListPage";
-import ArtDetailPage from "./pages/ArtDetailPage";
+import { ArtDetailPage } from "./pages/ArtDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -25,25 +25,14 @@ const router = createBrowserRouter([
         element: <ArtListPage></ArtListPage>,
       },
       {
-        path: "/contact",
-        element: <div>Contact</div>,
+        path: "/view/:artId",
+        element: <ArtDetailPage></ArtDetailPage>,
       },
       {
         path: "/search",
         element: (
           <div>
             <h2>Recherche</h2>
-          </div>
-        ),
-      },
-      {
-        path: "/view/:name",
-        element: (
-          <div>
-            <h1>Page d'une Oeuvre</h1>
-            <div>
-              <ArtDetailPage></ArtDetailPage>
-            </div>
           </div>
         ),
       },

@@ -19,7 +19,7 @@
   }
   
   .hovered {
-    background-color: plum;
+    background-color: #B3DADA;
   }
 
   .Container{
@@ -35,6 +35,11 @@
     width: 100px;
     border-radius: 10px;
     background-color: #008485;
-    border: 3px solid rgba(233, 245, 220, 0.551);
+    border: 3px solid #B3DADA; 
+  }
+
+  .ArtCard button:hover {
+    background-color: #B3DADA;
+    border: 3px solid #008485;
   }
 

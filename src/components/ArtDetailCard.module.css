@@ -1,24 +1,35 @@
-.art-detail-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.BigContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 10px;
 }
 
-.art-detail-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.ImageContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.art-detail-card p {
-  margin: 5px 0;
+.BigContainer img{
+    width: 50%;
 }
 
-.art-detail-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.fill{
+  object-fit: contain;
+}
+
+.InfoContainer{
+  max-width: 50%;
+  padding: 5px;
+    margin-left: 5px;
+    height: 100%;
+    border: 10px solid #008485;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
 }

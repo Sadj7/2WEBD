@@ -5,9 +5,9 @@ interface ArtIds {
     objectIDs: number[];
 }
 
-export function useArtIdListQuery(limit: number, offset: number) {
+export function useArtIdListQuery() {
   return useQuery({
-    queryKey: ["AllID", { limit, offset }],
+    queryKey: ["AllID"],
     queryFn: async () => {
       const response = await fetch(
         `https://collectionapi.metmuseum.org/public/collection/v1/objects`
