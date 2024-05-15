@@ -1,19 +1,40 @@
 .ArtCard {
-    width: 200px;
-    border: 4px solid mediumvioletred;
+    width: 400px;
+    border: 4px solid #B3DADA;
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     margin: 5px;
+    background-color: #eaf7f7;
+  }
+
+  .ArtCard img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .fill{
+    object-fit: cover;
   }
   
   .hovered {
     background-color: plum;
   }
 
-  .Button {
-    margin-inline: 20px;
-    background-color: mediumvioletred;
+  .Container{
+    margin-top: -30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  .ArtCard button {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #008485;
     border: 3px solid rgba(233, 245, 220, 0.551);
   }
+

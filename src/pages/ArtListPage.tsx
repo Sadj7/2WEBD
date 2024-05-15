@@ -6,7 +6,8 @@ import { useState } from "react";
 
 export function ArtListPage() {
   const [offset, setOffset] = useState(0);
-  const artIdListQuery = useArtIdListQuery();
+  const limit = 10;
+  const artIdListQuery = useArtIdListQuery(limit, offset);
 
   const incrementOffset = () => {
     setOffset(offset + 10);
@@ -25,16 +26,16 @@ export function ArtListPage() {
     return <div><h2>Erreur lors du chargement</h2></div>;
   }
 
-  const artsIdList = artIdListQuery.data;
+  const artsIdList = artIdListQuery.data?.objectIDs.slice(offset, offset + 10)
 
-  const displayedArts = artsIdList && artsIdList.idsList ? artsIdList.idsList.slice(offset, offset + 10) : [];
+  const total = artIdListQuery.data?.total ?? 0;
 
   return (
     <div>
-      <h2>Oeuvres mises en valeur: {artsIdList?.total}</h2>
-      <div>
-        {displayedArts?.map((artId: number) => (
-          <ArtCardWithDetails key={artId} id={artId} />
+      <h2>Oeuvres mises en valeur: {total}</h2>
+      <div className={styles.ArtGrid}>
+        {artsIdList?.map((id: number) => (
+          <ArtCardWithDetails key={id} id={id} />
         ))}
       </div>
       <div className={styles.Pagination}>
@@ -43,7 +44,7 @@ export function ArtListPage() {
         </button>
         <h4>Page {offset / 10 + 1}</h4>
         <button
-          disabled={offset >= (artsIdList?.total ?? 0) - 10}
+          disabled={offset >= (total) - 10}
           onClick={incrementOffset}
         >
           <h2>{">"}</h2>
@@ -53,20 +54,24 @@ export function ArtListPage() {
   );
 }
 
-interface ArtCardWithDetailsProps {
-  id: number;
-}
-
-function ArtCardWithDetails({ id }: ArtCardWithDetailsProps) {
+function ArtCardWithDetails({ id }: { id: number }) {
   const artDetailQuery = useArtDetailQuery(id);
-  const artDetail = artDetailQuery.data?.results[0];
+
+  if (artDetailQuery.isLoading) {
+    return <div><h2>Chargement en cours...</h2></div>;
+  }
+
+  if (artDetailQuery.isError) {
+    return <div><h2>Erreur lors du chargement</h2></div>;
+  }
+
+  const artDetail = artDetailQuery.data;
+  
+  if(!artDetail) {
+    return <div><h4>No art found !</h4></div>
+  }
 
   return (
-    <ArtCard
-      key={id}
-      title={artDetail?.title ?? "Titre inconnu"}
-      imageUrl={artDetail?.primaryImage ?? ""}
-      artist={artDetail?.artistDisplayName ?? "Artiste inconnu"}
-    />
-  );
+    <ArtCard title={artDetail.title} artist={artDetail.artistDisplayName} imgUrl={artDetail.primaryImageSmall} id={artDetail.objectID}/>
+  )
 }

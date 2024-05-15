@@ -1,20 +1,20 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 
-interface ArtListResponse {
+interface ArtIds {
     total: number;
-    idsList: number[];
+    objectIDs: number[];
 }
 
-export function useArtIdListQuery() {
-    return useQuery({
-        queryKey: ["arts"],
-        queryFn: async () => {
-            const response = await fetch(
-                `https://collectionapi.metmuseum.org/public/collection/v1/objects`
-            );
-            const json = await response.json();
-            return json as ArtListResponse;
-        },
-        placeholderData: keepPreviousData,
-    })
+export function useArtIdListQuery(limit: number, offset: number) {
+  return useQuery({
+    queryKey: ["AllID", { limit, offset }],
+    queryFn: async () => {
+      const response = await fetch(
+        `https://collectionapi.metmuseum.org/public/collection/v1/objects`
+      );
+      const json = await response.json();
+      return json as ArtIds;
+    },
+    placeholderData: keepPreviousData,
+  });
 }
