@@ -1,22 +1,110 @@
-/* DeepSearchPage.module.css */
-.formulaire-container {
+.DeepSearchContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #B3DADA;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.formulaire-container label {
-  margin-right: 10px;
+.DeepSearchContainer input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
 }
 
-.formulaire-container select {
-  padding: 5px;
+.DeepSearchContainer select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
 }
 
-.formulaire-container input[type="checkbox"] {
-  margin-right: 5px;
+.DeepSearchContainer button {
+  padding: 10px 20px;
+  background-color: #008485;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.DeepSearchContainer button:hover {
+  background-color: #eaf7f7;
+  color: black;
+}
+
+.ArtGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pagination button {
+  height: 100px;
+  width: 50px;
+  margin: 20px;
+  background-color: #008485;
+  border: 3px solid #b3dada;
+  border-radius: 15px;
+}
+
+.Pagination button:hover {
+  background-color: #b3dada;
+  border: 3px solid #008485;
+}
+
+.PreCard {
+  height: 400px;
+  width: 400px;
+  border: 4px solid #b3dada;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+  background-color: #eaf7f7;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .DeepSearchContainer input {
+    width: 80%;
+  }
+
+  .DeepSearchContainer select {
+    width: 80%;
+  }
+
+  .DeepSearchContainer button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .DeepSearchContainer {
+    flex-direction: column;
+  }
+
+  .DeepSearchContainer input {
+    margin-bottom: 10px;
+  }
+
+  .DeepSearchContainer button {
+    width: 100%;
+  }
 }

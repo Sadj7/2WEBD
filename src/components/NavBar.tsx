@@ -7,8 +7,6 @@ export function NavBar() {
   const [isHidden, setIsHidden] = useState(true);
   const [search, setSearch] = useState("");
 
-  const handleSearch = () => {};
-
   const handleChange = (name: string) => {
     setSearch(name);
   };
@@ -36,13 +34,12 @@ export function NavBar() {
               Recherche :
               <input
                 type="text"
-                placeholder="Nom d'une oeuvre..."
+                placeholder="Une recherche..."
                 onChange={(e) => handleChange(e.target.value)}
               />
               <Link to={`/search/${search}`}>
                 <button
                   className={styles.SearchButton}
-                  onClick={handleSearch}
                   disabled={search === ""}
                 >
                   🔍
