@@ -1,19 +1,26 @@
-.Pagination{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Pagination button{
-    margin: 20px;
-    background-color: mediumvioletred;
-    border: 3px solid rgba(233, 245, 220, 0.551);
-    border-radius: 15px;
+.Pagination button {
+  height: 100px;
+  width: 50px;
+  margin: 20px;
+  background-color: #008485;
+  border: 3px solid #b3dada;
+  border-radius: 15px;
+}
+
+.Pagination button:hover {
+  background-color: #b3dada;
+  border: 3px solid #008485;
 }
 
 .ArtGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
