@@ -1,12 +1,14 @@
-import { ArtCard } from "../components/ArtCard";
-import { useArtDetailQuery } from "../queries/useArtDetailQuery";
-import { useArtIdListQuery } from "../queries/useArtListQuery";
-import styles from "./ArtListPage.module.css";
 import { useState } from "react";
+import { ArtCard } from "../components/ArtCard";
+import { useArtSearchQuery } from "../queries/useSearchQuery";
+import styles from "./ArtListPage.module.css";
+import { useParams } from "react-router-dom";
+import { useArtDetailQuery } from "../queries/useArtDetailQuery";
 
-export function ArtListPage() {
+export function SearchPage() {
   const [offset, setOffset] = useState(0);
-  const artIdListQuery = useArtIdListQuery();
+  const { searchQuery = "" } = useParams<{ searchQuery: string }>();
+  const artIdListQuery = useArtSearchQuery(searchQuery);
 
   const incrementOffset = () => {
     setOffset(offset + 10);
@@ -18,7 +20,11 @@ export function ArtListPage() {
   };
 
   if (artIdListQuery.isLoading) {
-    return <div className={styles.PreCard}></div>;
+    return (
+      <div>
+        <h2>Chargement en cours...</h2>
+      </div>
+    );
   }
 
   if (artIdListQuery.isError) {
@@ -35,7 +41,7 @@ export function ArtListPage() {
 
   return (
     <div>
-      <h2>{total} oeuvres mises en valeur</h2>
+      <h2>{total} résultats trouvés</h2>
       <div className={styles.ArtGrid}>
         {artsIdList?.map((id: number) => (
           <ArtCardWithDetails key={id} id={id} />
@@ -58,7 +64,11 @@ function ArtCardWithDetails({ id }: { id: number }) {
   const artDetailQuery = useArtDetailQuery(id);
 
   if (artDetailQuery.isLoading) {
-    return <div className={styles.PreCard}></div>;
+    return (
+      <div className={styles.PreCard}>
+        <h2>Chargement en cours...</h2>
+      </div>
+    );
   }
 
   if (artDetailQuery.isError) {

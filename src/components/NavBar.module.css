@@ -1,143 +1,155 @@
-:root{
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    background-color: #D9EDED;
-
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #d9eded;
 }
 
-.navbar{
-    top: 0px;
+.navbar {
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #d9eded;
+  background-color: #008485;
+}
+
+.navbar h1 {
+  padding: 5px 0;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar h1:hover {
+  color: #d9eded;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks li {
+  list-style: none;
+  padding: 0 25px;
+  position: relative;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.navlinks li p {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.navlinks li a:hover {
+  color: #d9eded;
+}
+
+.navlinks li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #d9eded;
+  position: absolute;
+  bottom: -4px;
+  left: 25px;
+}
+
+.navbar input {
+  width: 300px;
+  height: 17px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #d9eded;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: "Une recherche...";
+}
+
+.SearchButton {
+  font-size: 17px;
+  background-color: #d9eded;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  border-left: none;
+}
+
+.menuicon {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 50px;
     width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    border-bottom: 2px solid #D9EDED;
-    background-color: #008485;
+    height: 100vh;
+    justify-content: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.034);
   }
 
-  .navbar h1{
-    padding: 5px 0;
-    color: black;
-    transition: 0.3s ease-in-out;
+  .navlinks.showed {
+    margin-left: 0;
   }
 
-  .navbar h1:hover{
-    color: #D9EDED;
+  .showed {
+    margin-left: 0;
   }
 
-  .navlinks{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .menuicon {
+    display: block;
   }
 
-  .navlinks li{
+  .navlinks li {
     list-style: none;
-    padding: 0 25px;
+    padding: 25px 0;
     position: relative;
     align-items: center;
-    font-size: 1.2rem;
-    justify-content: center;
+    font-size: 2em;
   }
 
-  .navlinks li a{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-    transition: 0.3s ease-in-out;
+  .navlinks input {
+    height: 3em;
+    width: 100%;
   }
-
-  .navlinks li p{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-  }
-
-  .navlinks li a:hover{
-    color: #D9EDED;
-  }
-
-  .navlinks li a:hover::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background-color: #D9EDED;
-    position: absolute;
-    bottom: -4px;
-    left: 25px;
-  }
-
-  .navbar input{
-    width: 300px;
-    height: 17px;
-    border-radius: 20px;
-    background-color: #D9EDED;
-    padding: 10px;
-    font-size: 17px;
-    font-weight: 600;
-    text-shadow: "Une recherche...";
-  }
-
-  .menuicon{
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    height: 50px;
-    width: 50px;
-    color: black;
-  }
-
-  @media screen and (max-width: 1050px){
-    .navbar{
-      padding: 0;
-    }
-
-    .navbar h1{
-        position: absolute;
-        top: 50px;
-        left: 50px;
-      }
-
-    .navlinks{
-      position: absolute;
-        top: 0;
-        left: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      justify-content: center;
-      margin-left: -100%;
-      transition: all 0.5s ease;
-      background-color: rgba(255, 255, 255, 0.034);
-    }
-
-    .navlinks.showed{
-        margin-left: 0;
-    }
-
-    .showed{
-        margin-left: 0;
-    }
-
-    .menuicon{
-        display: block;
-    }
-
-    .navlinks li{
-        list-style: none;
-        padding: 25px 0;
-        position: relative;
-        align-items: center;
-        font-size: 2em;
-      }
-
-      .navlinks input{
-        height: 3em;
-        width: 100%;
-      }
-  }
+}

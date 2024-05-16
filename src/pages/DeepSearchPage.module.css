@@ -1,0 +1,22 @@
+/* DeepSearchPage.module.css */
+.formulaire-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire-container label {
+  margin-right: 10px;
+}
+
+.formulaire-container select {
+  padding: 5px;
+}
+
+.formulaire-container input[type="checkbox"] {
+  margin-right: 5px;
+}

@@ -2,6 +2,8 @@ import { NavBar } from "./components/NavBar";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { ArtListPage } from "./pages/ArtListPage";
 import { ArtDetailPage } from "./pages/ArtDetailPage";
+import { SearchPage } from "./pages/SearchPage";
+import { DeepSearchPage } from "./pages/DeepSearchPage";
 
 const router = createBrowserRouter([
   {
@@ -29,12 +31,12 @@ const router = createBrowserRouter([
         element: <ArtDetailPage></ArtDetailPage>,
       },
       {
-        path: "/search",
-        element: (
-          <div>
-            <h2>Recherche</h2>
-          </div>
-        ),
+        path: "/search/:searchQuery",
+        element: <SearchPage></SearchPage>,
+      },
+      {
+        path: "/deepsearch",
+        element: <DeepSearchPage></DeepSearchPage>,
       },
     ],
   },
