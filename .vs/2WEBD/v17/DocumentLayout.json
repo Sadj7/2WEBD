@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\julie\\source\\repos\\2WEBD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\accueil.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\accueil.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\avance-search.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\avance-search.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\ArtCard.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\src\\pages\\ArtDetailPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\ArtDetailPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\src\\queries\\useArtDetailQuery.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\queries\\useArtDetailQuery.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\ArtCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\oeuvre-details.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\oeuvre-details.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,74 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-16T07:39:55.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "useArtDetailQuery.ts",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\queries\\useArtDetailQuery.ts",
-              "RelativeDocumentMoniker": "src\\queries\\useArtDetailQuery.ts",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\queries\\useArtDetailQuery.ts",
-              "RelativeToolTip": "src\\queries\\useArtDetailQuery.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Title": "avance-search.spec.ts",
+              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\avance-search.spec.ts",
+              "RelativeDocumentMoniker": "tests\\avance-search.spec.ts",
+              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\avance-search.spec.ts",
+              "RelativeToolTip": "tests\\avance-search.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-16T07:30:53.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ArtCard.tsx",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.tsx",
-              "RelativeDocumentMoniker": "src\\components\\ArtCard.tsx",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.tsx",
-              "RelativeToolTip": "src\\components\\ArtCard.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-16T07:28:58.137Z"
+              "WhenOpened": "2024-05-17T07:31:10.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ArtCard.module.css",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.module.css",
-              "RelativeDocumentMoniker": "src\\components\\ArtCard.module.css",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\components\\ArtCard.module.css",
-              "RelativeToolTip": "src\\components\\ArtCard.module.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-16T07:28:56.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ArtDetailPage.tsx",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\pages\\ArtDetailPage.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\ArtDetailPage.tsx",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\src\\pages\\ArtDetailPage.tsx",
-              "RelativeToolTip": "src\\pages\\ArtDetailPage.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "oeuvre-details.spec.ts",
+              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\oeuvre-details.spec.ts",
+              "RelativeDocumentMoniker": "tests\\oeuvre-details.spec.ts",
+              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\oeuvre-details.spec.ts",
+              "RelativeToolTip": "tests\\oeuvre-details.spec.ts",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-16T07:27:01.679Z"
+              "WhenOpened": "2024-05-17T07:28:19.803Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAiwFsAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-05-16T07:10:10.856Z",
+              "Title": "accueil.spec.ts",
+              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\accueil.spec.ts",
+              "RelativeDocumentMoniker": "tests\\accueil.spec.ts",
+              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\accueil.spec.ts",
+              "RelativeToolTip": "tests\\accueil.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-17T07:15:37.006Z",
               "EditorCaption": ""
             }
           ]
