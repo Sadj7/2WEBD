@@ -92,3 +92,14 @@ This project is licensed under the [MIT License](LICENSE).
 - [playwright@latest](https://www.npmjs.com/package/playwright)
 
 ## Test
+
+
+- Pour lancer les test, il faut faire :
+		- ' npx playwright test' ou 'npm playwright test' pour juste faire les test en backoffice
+
+- Pour lancer les test avec l'interface graphique, il faut faire:
+		- ' npx playwright test --ui' ou 'npm playwright test --ui' pour lancer les test avec l'UI
+
+- accueill.spec.ts : test de la page d'accueil
+- avance-search.spec.ts : test de la recherche avancée
+- oeuvre-detail.spec.ts : test de la page de détail d'une oeuvre
