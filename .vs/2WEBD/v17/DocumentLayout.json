@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\julie\\source\\repos\\2WEBD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\accueil.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\accueil.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\julie\\source\\repos\\2WEBD\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-05-17T17:16:59.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "avance-search.spec.ts",
               "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\avance-search.spec.ts",
               "RelativeDocumentMoniker": "tests\\avance-search.spec.ts",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "tests\\avance-search.spec.ts",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-17T07:31:10.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T07:31:10.379Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "oeuvre-details.spec.ts",
               "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\oeuvre-details.spec.ts",
               "RelativeDocumentMoniker": "tests\\oeuvre-details.spec.ts",
@@ -59,12 +75,11 @@
               "RelativeToolTip": "tests\\oeuvre-details.spec.ts",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-17T07:28:19.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T07:28:19.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "accueil.spec.ts",
               "DocumentMoniker": "C:\\Users\\julie\\source\\repos\\2WEBD\\tests\\accueil.spec.ts",
               "RelativeDocumentMoniker": "tests\\accueil.spec.ts",
