@@ -49,7 +49,7 @@ To get started with the project, follow these steps:
 - Julien SCHOEFFRE
 
 
-##Libraries
+## Librairies
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
