@@ -51,6 +51,7 @@ export function DeepSearchPage() {
     return (
       <div>
         <h2>Erreur lors du chargement</h2>
+        <button className={styles.BackButton} onClick={() => window.history.back()}>Retour</button>
       </div>
     );
   }
@@ -119,7 +120,6 @@ export function DeepSearchPage() {
               <option value="false">Non</option>
             </select>
           </p>
-        <button className="" disabled={artName !== "*" || authorName !== "*" || department !== "*" || isHighlight !== "*"}>Rechercher</button>
       </div>
       <div>
       <h2>{total} résultats trouvés</h2>

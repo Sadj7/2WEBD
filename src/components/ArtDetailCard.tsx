@@ -39,6 +39,7 @@ export function ArtDetailCard(props: ArtDetailCardProps) {
         <p>Culture: <h4>{artCulture}</h4></p>
         <p>Dimensions: <h4>{artDimensions}</h4></p>
         <p>Ligne de crédit: <h4>{artCreditLine}</h4></p>
+        <button className={styles.BackButton} onClick={() => window.history.back()}>Retour</button>
       </div>
     </div>
   );

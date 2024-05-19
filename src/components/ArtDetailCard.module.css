@@ -33,3 +33,19 @@
     align-items: start;
     width: 100%;
 }
+
+.BackButton{
+  padding: 10px 20px;
+  background-color: #008485;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.BackButton:hover {
+  background-color: #eaf7f7;
+  color: black;
+}

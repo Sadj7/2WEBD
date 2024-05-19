@@ -16,7 +16,6 @@ export function useArtDeepSearchQuery(title: string, query: string, departmentId
         throw new Error('Erreur lors de la récupération des données');
       }
       const json = await response.json();
-      console.log(json);
       return json as ArtIds;
     },
     placeholderData: keepPreviousData,

@@ -27,9 +27,6 @@ export function NavBar() {
             <Link to="/deepsearch">Recherche avancée</Link>
           </li>
           <li>
-            <Link to="/contact">Nous contacter</Link>
-          </li>
-          <li>
             <p>
               Recherche :
               <input

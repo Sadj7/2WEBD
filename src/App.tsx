@@ -4,15 +4,17 @@ import { ArtListPage } from "./pages/ArtListPage";
 import { ArtDetailPage } from "./pages/ArtDetailPage";
 import { SearchPage } from "./pages/SearchPage";
 import { DeepSearchPage } from "./pages/DeepSearchPage";
+import styles from "./components/ArtDetailCard.module.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     errorElement: (
       <div>
-        Page non trouvée
-        <br />
-        <a href="/">Retour à l'accueil</a>
+        <NavBar></NavBar>
+        <Outlet />
+        <h1>Aucun élément trouvé</h1>
+        <button className={styles.BackButton} onClick={() => window.history.back()}>Retour</button>
       </div>
     ),
     element: (
